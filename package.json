@@ -22,8 +22,8 @@
         "url": "https://github.com/ysfkaya"
     },
     "build": {
-        "productName": "A-Star-Algoritması",
-        "appId": "org.ysfkaya.A-Star-Algoritmasi",
+        "productName": "A-Star-Algorithm",
+        "appId": "org.ysfkaya.A-Star-Algorithm",
         "dmg": {
             "contents": [{
                     "x": 130,

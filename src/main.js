@@ -4,14 +4,14 @@ function createWindow () {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
-        title: "N-Puzzle A-Star Algoritması [190403909]",
+        title: "N-Puzzle A-Star Algorithm",
         resizable: false,
         webPreferences: {
             nodeIntegration: true
         }
     })
 
-    win.loadFile('index.html');
+    win.loadFile('src/index.html');
     // win.webContents.openDevTools();
 }
 
