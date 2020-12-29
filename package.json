@@ -1,7 +1,7 @@
 {
-    "name": "15-puzzle-a-star-algorithm",
+    "name": "n-puzzle-a-star-algorithm",
     "version": "0.1.0",
-    "main": "main.js",
+    "main": "src/main.js",
     "scripts": {
         "start": "electron .",
         "build": "electron-builder"
