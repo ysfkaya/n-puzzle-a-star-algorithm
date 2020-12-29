@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>N-Puzzle A-Star Algoritması [190403909]</title>
+    <style>
+        body {
+            background-color: rgb(68, 82, 97);
+            overflow: hidden;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1rem;
+            justify-content: space-between;
+        }
+        
+        .input-group label {
+            color: white;
+            margin-right: 1rem;
+            text-transform: uppercase;
+        }
+        
+        #time,
+        #attempts {
+            margin-top: 1rem;
+            color: white;
+            border: 1px solid rgb(103, 107, 140);
+            padding: 1rem 2rem;
+        }
+        
+        #attempt {
+            font-size: 14px;
+            background-color: rgb(61, 80, 113);
+            border: 2px solid rgb(103, 107, 140);
+            text-align: center;
+            color: white;
+            padding: .5rem;
+            width: 50px;
+        }
+        
+        #attempt:disabled {
+            background-color: red;
+            cursor: not-allowed;
+        }
+        
+        .buttons button:disabled {
+            cursor: not-allowed;
+            background-color: red;
+        }
+        
+        table,
+        tr,
+        td {
+            border: 1px solid white;
+        }
+        
+        td {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .buttons button {
+            margin: 0 1rem;
+            padding: .5rem 1rem;
+            background-color: transparent;
+            color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: rgb(24, 53, 75);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="board"></div>
+
+        <div class="buttons">
+            <button id="solvable">
+                Çözülebilen
+            </button>
+            <button id="shuffle">
+                Karıştır
+            </button>
+            <button id="solve">
+                Çöz
+            </button>
+            <button id="reset">
+                Sıfırla
+            </button>
+        </div>
+
+        <div class="input-group">
+            <label>Deneme Sayısı : </label>
+            <input type="number" id="attempt">
+        </div>
+
+        <span id="time"></span>
+        <span id="attempts"></span>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

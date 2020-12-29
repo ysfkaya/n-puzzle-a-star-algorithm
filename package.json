@@ -1,0 +1,49 @@
+{
+    "name": "15-puzzle-a-star-algorithm",
+    "version": "0.1.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "keywords": [],
+    "dependencies": {
+        "lodash": "^4.17.20",
+        "moment": "^2.29.1"
+    },
+    "devDependencies": {
+        "electron": "^10.1.5",
+        "electron-builder": "^22.9.1",
+        "electron-reloader": "^1.0.1"
+    },
+    "author": {
+        "name": "Yusuf Kaya",
+        "email": "yusuf.kaya.x0@gmail.com",
+        "url": "https://github.com/ysfkaya"
+    },
+    "build": {
+        "productName": "A-Star-Algoritması",
+        "appId": "org.ysfkaya.A-Star-Algoritmasi",
+        "dmg": {
+            "contents": [{
+                    "x": 130,
+                    "y": 220
+                },
+                {
+                    "x": 410,
+                    "y": 220,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                "deb",
+                "rpm",
+                "AppImage"
+            ],
+            "category": "Development"
+        }
+    }
+}
